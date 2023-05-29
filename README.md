@@ -45,7 +45,58 @@
 
   <script src="../scripts/main.js"></script>
 </body>
-</html>
+</html/
+  
+const dataElement = document.getElementById('data');
+
+const data = localStorage.getItem('data');
+if (data) {
+  dataElement.textContent += data;
+} else {
+  dataElement.textContent += 'No hay datos almacenados.';
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+  
+  // Manipulación del documento manipulado.html
+document.addEventListener('DOMContentLoaded', function() {
+  var messageElement = document.getElementById('message');
+  messageElement.textContent = 'Texto modificado por JavaScript';
+});
+
+// Persistencia de datos mediante Local Storage
+var data = {
+  name: 'John',
+  age: 25
+};
+localStorage.setItem('userData', JSON.stringify(data));
+
+// Recuperación de datos almacenados en Local Storage
+var userData = JSON.parse(localStorage.getItem('userData'));
+console.log(userData);
+
+/* Estilos para mobile */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+/* Estilos para desktop */
+@media (min-width: 601px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
 
 document.addEventListener('DOMContentLoaded', function() {
   var messageElement = document.getElementById('message');
