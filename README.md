@@ -47,3 +47,29 @@
 </body>
 </html>
 
+document.addEventListener('DOMContentLoaded', function() {
+  var messageElement = document.getElementById('message');
+  messageElement.textContent = 'Texto modificado por JavaScript';
+});
+
+// Persistencia de datos mediante Local Storage
+var data = {
+  name: 'sara',
+  age: 22
+};
+localStorage.setItem('userData', JSON.stringify(data));
+/* Estilos para mobile */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+/* Estilos para desktop */
+@media (min-width: 601px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+
