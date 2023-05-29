@@ -31,4 +31,19 @@
   <script src="scripts/main.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/main.css">
+  <title>Documento 1</title>
+</head>
+<body>
+  <h1>Documento 1</h1>
+  <p id="data">Datos: </p>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
 
