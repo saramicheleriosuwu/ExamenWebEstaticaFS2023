@@ -45,7 +45,7 @@
 
   <script src="../scripts/main.js"></script>
 </body>
-</html>
++ </html>
 
 document.addEventListener('DOMContentLoaded', function() {
   var messageElement = document.getElementById('message');
