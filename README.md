@@ -46,4 +46,22 @@
   <script src="../scripts/main.js"></script>
 </body>
 </html>
+const dataElement = document.getElementById('data');
+const data = localStorage.getItem('data');
+if (data) {
+  dataElement.textContent += data;
+} else {
+  dataElement.textContent += 'No hay datos almacenados.';
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+
 
