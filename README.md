@@ -10,8 +10,8 @@
 - pages
   - document1.html
   - document2.html
-  - document3.html
-
+  -
+  -  document3.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
